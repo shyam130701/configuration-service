@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: product-service
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3300/product_service
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        use_sql_comments: true
+        show_sql: true
+
+
+message:
+  "Hello from product-service application.yml"
